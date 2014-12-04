@@ -1,6 +1,6 @@
 {
   "name": "paging-link",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/paging-link.js",
   "description": "Creates RESTful paging link object based on total, limit and offset",
   
