@@ -1,0 +1,41 @@
+{
+  "name": "paging-link",
+  "version": "0.0.0",
+  "main": "lib/paging-link.js",
+  "description": "Creates RESTful paging link object based on total, limit and offset",
+  
+      "homepage": "https://github.com/PatrickWolleb/paging-link",
+    
+    "bugs": "https://github.com/PatrickWolleb/paging-link/issues",
+  "author": {
+    "name": "Patrick Wolleb",
+    "email": "patrick.wolleb@shmedia.co.uk"  ,
+        "url": "http://shmedia.co.uk" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatrickWolleb/paging-link"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "paging-link"  ,
+        "link"  ,
+        " header"  ,
+        " pagination" 
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0" 
+  },
+  "scripts": {
+    "test": "grunt" 
+  } 
+}
