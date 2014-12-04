@@ -36,6 +36,7 @@
     "jshint-stylish": "^0.2.0" 
   },
   "scripts": {
-    "test": "grunt" 
+    "test": "grunt", 
+    "exmaple" : "node exmaple/pagin-link_exmaple.js"
   } 
 }
