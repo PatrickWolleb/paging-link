@@ -1,4 +1,4 @@
-#  [![Build Status](https://secure.travis-ci.org/PatrickWolleb/paging-link.png?branch=master)](http://travis-ci.org/PatrickWolleb/paging-link)
+#  [![wercker status](https://app.wercker.com/status/1d1aa78e5079df1e98890b331dfdebb3/m "wercker status")](https://app.wercker.com/project/bykey/1d1aa78e5079df1e98890b331dfdebb3)
 
 > Creates RESTful paging link object based on total, limit and offset
 
@@ -7,30 +7,26 @@
 
 Install the module with: `npm install paging-link`
 
-```js
-var paging-link = require('paging-link');
-paging-link.awesome(); // "awesome"
-```
-
-Install with cli command
-
-```sh
-$ npm install -g paging-link
-$ paging-link --help
-$ paging-link --version
-```
-
-
-
-
-## Documentation
-
-_(Coming soon)_
-
-
 ## Examples
 
-_(Coming soon)_
+```javascript
+
+var PagingLink = require('../lib/paging-link.js');
+
+var paging = new PagingLink({
+	root : 'http://localhost:8000/users',
+	limitKey : 'limit',
+	offsetKey : 'offset'
+});
+
+
+// Process plain data object sync 
+var header = paging.process( total, limit, offset );
+
+// Render as HTTP header value
+var headerValue = paging.toHTTPHeader( header );
+
+```
 
 
 ## Contributing
